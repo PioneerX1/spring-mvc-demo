@@ -8,6 +8,8 @@ public class Student {
 	private String lastName;
 	private String country;
 	//private LinkedHashMap<String, String> countryOptions;
+	private String favLang;
+	private String[] operatingSystems;
 	
 	public Student() {
 		// no-arg constructor
@@ -44,6 +46,22 @@ public class Student {
 	// on submit form, Spring will call setCountry() method
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getFavLang() {
+		return favLang;
+	}
+
+	public void setFavLang(String favLang) {
+		this.favLang = favLang;
+	}
+
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
 	}
 
 //	public LinkedHashMap<String, String> getCountryOptions() {

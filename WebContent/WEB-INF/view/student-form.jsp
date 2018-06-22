@@ -19,6 +19,19 @@
 			<form:options items="${countryOptions}" />
 		</form:select>
 		<br>
+		Favorite Programming Language:
+		<br>
+		${languageOptions.java} <form:radiobutton path="favLang" value="${languageOptions.java}" />
+		${languageOptions.csharp} <form:radiobutton path="favLang" value="${languageOptions.csharp}" />
+		${languageOptions.python} <form:radiobutton path="favLang" value="${languageOptions.python}" />
+		${languageOptions.ruby} <form:radiobutton path="favLang" value="${languageOptions.ruby}" />
+		<br>
+		Operating Systems:
+		<br>
+		Linux <form:checkbox path="operatingSystems" value="Linux" />
+		MacOS <form:checkbox path="operatingSystems" value="MacOS" />
+		Windows <form:checkbox path="operatingSystems" value="Windows" />
+		<br>
 		<input type="submit" value="Submit" />
 	</form:form>
 
