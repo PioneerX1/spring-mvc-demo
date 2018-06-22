@@ -11,7 +11,7 @@
 	<h2>Student Confirmation Info</h2>
 	<br>
 	<h3>First Name: ${student.firstName}</h3>
-	<H3>Last Name: ${student.lastName}</H3>
-
+	<h3>Last Name: ${student.lastName}</h3>
+	<h3>Country: ${student.country}</h3>
 </body>
 </html>

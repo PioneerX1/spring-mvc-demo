@@ -1,12 +1,23 @@
 package com.luv2code.springdemo.mvc;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 
 	private String firstName;
 	private String lastName;
+	private String country;
+	//private LinkedHashMap<String, String> countryOptions;
 	
 	public Student() {
 		// no-arg constructor
+		// populate country options: using ISO code
+//		countryOptions = new LinkedHashMap<>();
+//		countryOptions.put("BR", "Brazil");
+//		countryOptions.put("FR", "France");
+//		countryOptions.put("DE", "Germany");
+//		countryOptions.put("IN", "India");
+//		countryOptions.put("LT", "Lithuania");
 	}
 
 	// using a Spring form on student-form.jsp, Spring automatically calls these getters & setters now
@@ -25,5 +36,18 @@ public class Student {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	// on submit form, Spring will call setCountry() method
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+//	public LinkedHashMap<String, String> getCountryOptions() {
+//		return countryOptions;
+//	}
 	
 }
