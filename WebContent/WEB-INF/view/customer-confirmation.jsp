@@ -13,7 +13,9 @@
 	<h2>Customer confirmed!</h2>
 	<h3>First Name: ${customer.firstName}</h3>
 	<h3>Last Name: ${customer.lastName}</h3>
-
+	<h3>Free Passes: ${customer.freePasses}</h3>
+	<h3>Postal Code: ${customer.postalCode}</h3>
+	<h3>Course Code: ${customer.courseCode}</h3>
 
 </body>
 </html>
